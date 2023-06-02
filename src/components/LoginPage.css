@@ -1,0 +1,130 @@
+.loginpage__container {
+  background-color: #0b0b0b;
+  height: 100vh;
+}
+
+.loginpage__email,
+.loginpage__password {
+  color: #380003;
+  animation: xam 1s infinite alternate-reverse;
+}
+
+
+.loginpage__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  gap: 16px;
+  background-color: #242424;
+  padding: 48px 0px;
+  border-radius: 32px;
+  padding: 32px;
+}
+
+.loginpage__title {
+  color: #e50914;
+  font-size: 48px;
+  letter-spacing: 8px;
+  font-weight: 700;
+}
+
+.loginpage__subtitle {
+  color: #e50914;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.loginpage__button {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  width: 100%;
+  height: 40px;
+  max-width: 200px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.loginpage__button:hover {
+  color: #e50914;
+  background: transparent;
+  border: 2px solid #e50914;
+}
+
+.signup__button {
+  font-size: 20px;
+  text-decoration: none;
+  color: #c45b60;
+  transition: all 300ms ease;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.signup__button:hover {
+  color: #dab8ba;
+}
+
+@media (max-width: 640px) {
+  .loginpage__wrapper {
+    max-width: 400px;
+  }
+  .loginpage__email,
+  .loginpage__password {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 440px) {
+  .loginpage__title {
+    font-size: 32px;
+  }
+  .loginpage__subtitle {
+    font-size: 16px;
+  }
+  .loginpage__wrapper {
+    max-width: 300px;
+  }
+  .loginpage__email,
+  .loginpage__password {
+    max-width: 200px;
+    padding: 8px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .loginpage__button {
+    max-width: 100px;
+    height: 24px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .signup__button {
+    font-size: 12px;
+  }
+}
+
+.signup__link {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #c45b60;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.signup__link:hover {
+  color: #dab8ba;
+}

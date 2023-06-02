@@ -1,0 +1,132 @@
+.movie__infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  gap: 64px;
+  padding: 50px 60px 20px 60px;
+  background-color: #242424;
+  color: #fff;
+  text-align: center;
+}
+
+.movie__backButton {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100px;
+  border: none;
+  border-radius: 100px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.movie__backButton:hover {
+  color: #e50914;
+  background: transparent;
+  border: 2px solid #e50914;
+}
+
+.rating__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 0px 50px 0px;
+  gap: 8px;
+}
+
+.rating__button {
+  display: flex;
+  color: yellow;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.movie__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #e50914;
+  width: 100%;
+}
+
+.movie__trailer {
+  font-size: 20px;
+  text-decoration: none;
+  color: #c45b60;
+  transition: all 300ms ease;
+}
+
+.movie__trailer:hover {
+  color: #dab8ba;
+}
+
+.loading__wrapper {
+  height: 46vh;
+  margin-top: 100px;
+}
+
+.loading__spinner {
+  border-top: 8px solid #e50914;
+  border-right: 8px solid #e50914;
+  border-left: 8px solid #e50914;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-right: none;
+  animation: spinner 1s alternate infinite;
+}
+input[type="radio"] {
+  display: none;
+}
+.star{
+  transform: scale(0.85);
+  cursor: pointer;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .movie__img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .movie__info {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .movie__img{
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .movie__info{
+    font-size: 10px;
+  }
+
+ .css-tzssek-MuiSvgIcon-root {
+    font-size: 1rem;
+  }
+}
